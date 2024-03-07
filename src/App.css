@@ -1,9 +1,32 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .video-frame {
   position: relative;
 }
 
 .video{
   border-radius: 10px;
+  height: 80vh;
+}
+
+.result-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faceLandmarks{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  margin: 50px;
 }
 
 [class^="landmark"]{
@@ -11,5 +34,12 @@
   height: 2px;
   width: 2px;
   border-radius: 10px;
-  background-color: #000
+  background-color: #000;
+}
+
+.aspect-ratios{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 50px;
+  gap: 10px;
 }
